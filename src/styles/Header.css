@@ -1,0 +1,67 @@
+/* General navbar styles */
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black; /* Dark background */
+  padding: 10px 20px;
+  border-radius: 50px; /* Smooth rounded effect */
+  position: fixed; /* Navbar floats */
+  top: 20px; /* Initial distance from the top */
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds shadow for floating effect */
+  z-index: 1000; /* Ensures the navbar is above other content */
+  transition: top 0.3s, opacity 0.3s ease; /* Smooth hiding and showing */
+  opacity: 1; /* Default visibility */
+}
+
+.navbar.hidden {
+  top: -100px; /* Move the navbar out of view */
+  opacity: 0; /* Fully transparent */
+}
+
+/* Navbar list styles */
+.nav-list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Navbar item styles */
+.nav-list li {
+  margin: 0 15px;
+}
+
+.nav-list a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: gray; /* Default icon/text color */
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-list a:hover {
+  color: white; /* Change to white on hover for contrast */
+}
+
+/* Add spacing between icon and text */
+.nav-list .fa-icon {
+  margin-right: 8px; /* Adjust this value to increase/decrease spacing */
+}
+
+/* Icon styles */
+.nav-list i {
+  font-size: 16px; /* Adjust icon size */
+}
+
+/* Additional styling for the navbar's rounded edges */
+.navbar::before,
+.navbar::after {
+  content: '';
+  border-radius: 50px;
+}

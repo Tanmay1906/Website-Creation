@@ -1,0 +1,63 @@
+/* src/styles/Team.css */
+
+.team-page {
+    text-align: center;
+    padding: 50px;
+    background: linear-gradient(to bottom, #000000, #2f2f2f); /* Gradient background */
+    min-height: 100vh; /* Full viewport height */
+    box-sizing: border-box;
+    width: 100vw; /* Full viewport width */
+    transition: opacity 0.5s ease-out; /* Ensure the transition is applied */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align content to the top */
+}
+
+.team-page h1 {
+    margin-top: 150px; /* Reduce the top margin */
+}
+
+.team-page.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.team-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;/
+}
+
+.team-member {
+    background-color: rgb(33, 32, 32);
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 200px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.team-member img {
+    width: 150px; /* Set a fixed width */
+    height: 150px; /* Set the same height */
+    border-radius: 50%;
+    margin-bottom: 10px;
+    object-fit: cover; /* Ensure the image covers the area */
+}
+
+.member-info {
+    background-color: gray;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.member-info h2 {
+    font-size: 1.2em;
+    margin: 0;
+}
+
+.member-info p {
+    font-size: 1em;
+    color: #020000;
+}

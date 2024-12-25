@@ -1,0 +1,204 @@
+/* Prevent scrolling on the x-axis */
+body, html {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Ensure the body and html take full height */
+}
+
+/* Keyframes for typing animation */
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: orange; }
+}
+
+/* Home container */
+.Home {
+    height: 100%; /* Ensure the Home container takes full height */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Landing page container */
+.landing-page {
+    background-image: url('D:/Tanmay/Projects/Zidio/src/assets/bg.png'); /* Use forward slashes */
+    background-size: cover; /* Make the background image cover the entire screen */
+    background-position: center; /* Center the background image */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the very left */
+    justify-content: center;
+    height: 100vh; /* Full viewport height */
+    width: 100vw; /* Full viewport width */
+    background-color: #282c34; /* Same background color */
+    color: white;
+    font-family: 'YourFontFamily', sans-serif; /* Ensure this matches your main page font */
+    text-align: left; /* Align text to the left */
+    padding-left: 100px; /* Shift text to the right by 100px */
+    margin-left: 0; /* Remove left margin */
+    overflow: hidden; /* Hide scrollbars */
+    z-index: 2; /* Foreground content */
+    position: relative; /* Ensure it is positioned correctly */
+    margin-top: 2200px;
+}
+
+.logo {
+    width: 300px; /* Adjust the size of the logo */
+    height: auto;
+    margin-bottom: 20px; /* Add some space below the logo */
+}
+
+/* Headings */
+.landing-page h1 {
+    font-size: 3em; /* Increase font size */
+    font-weight: bold; /* Make the text bold */
+    margin: 10px 0; /* Adjust margin */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow for better visibility */
+}
+
+.landing-page h4 {
+    font-size: 1em; /* Adjust font size for h4 */
+    margin: 10px 0; /* Adjust margin */
+    color: rgb(255, 255, 255);
+}
+
+/* About section */
+.About {
+    background: linear-gradient(to bottom, #000000, #2f2f2f); /* Gradient background */
+    color: #fdfcfc; /* Text color */
+    width: 100%; /* Full width */
+    box-sizing: border-box; /* Include padding in width calculation */
+    position: relative; /* Ensure it follows the landing page content */
+    z-index: 1; /* Below the landing page content */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    text-align: center; /* Center text */
+}
+
+.About .heading {
+    font-size: 3em; /* Adjust font size for heading */
+    margin-bottom: 40px; /* Add some space below the heading */
+    margin-top: 2px;
+}
+
+.About .content {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between items */
+    width: 100%; /* Full width */
+    max-width: 1200px; /* Limit the width of the content */
+    text-align: left; /* Align text to the left */
+}
+
+.About .text {
+    flex: 1; /* Take up remaining space */
+    padding-right: 20px; /* Add some space between text and image */
+}
+
+.About .image {
+    flex: 1; /* Take up remaining space */
+    max-width: 50%; /* Limit the width of the image */
+    margin-left: 20px;
+    transform: translate(60px, -20px);
+}
+
+.About .image img {
+    max-height: 300px; /* Adjust the maximum height of the image */
+    width: auto; /* Maintain aspect ratio */
+    border-radius: 10%;
+}
+
+.About h3 {
+    font-size: 2em; /* Adjust font size for h3 */
+    margin-bottom: 20px; /* Add some space below the heading */
+}
+
+.About p {
+    font-size: 1.5em; /* Adjust font size for paragraph */
+    margin: 0 auto; /* Center the paragraph */
+    min-width: 900px; /* Limit the width of the paragraph */
+    text-align: center; /* Center the text */
+    margin-bottom: 50px;
+}
+
+
+
+/* Typewriter effect for headings */
+.typewriter h1, .typewriter h4 {
+    display: inline-block;
+    overflow: hidden;
+    align-items: center;
+    border-right: .15em solid orange; /* Cursor effect */
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+}
+
+/* Timeline container */
+.timeline-container .Heading {
+    font-size: 2.5em; /* Adjust font size for the timeline header */
+    font-weight: bold; /* Make the text bold */
+    text-align: center; /* Center the text */
+    margin-bottom: 30px; /* Add some space below the header */
+    color: #fdfbfb; /* Text color */
+}
+.timeline-container {
+    background: linear-gradient(to bottom, #2f2f2f, #252424); /* Lighter gradient background */
+    padding: 50px 20px; /* Padding for the section */
+    width: 100%; /* Full width */
+    box-sizing: border-box; /* Include padding in width calculation */
+    position: relative; /* Ensure it follows the landing page content */
+    z-index: 1; /* Below the landing page content */
+}
+
+.Last {
+    background: linear-gradient(to bottom, #252424, #101010); /* Lighter gradient background */  
+    margin-bottom: 50px; /* Add some space below the last timeline item */
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .landing-page h1 {
+        font-size: 2.5em;
+    }
+
+    .landing-page h4 {
+        font-size: 1.8em;
+    }
+
+    .cta-button {
+        padding: 8px 16px;
+    }
+
+    .About {
+        flex-direction: column; /* Stack items vertically on small screens */
+        text-align: center; /* Center text on small screens */
+    }
+
+    .About .text {
+        padding-right: 0; /* Remove padding on small screens */
+    }
+
+    .About .image {
+        max-width: 100%; /* Full width on small screens */
+        margin-top: 20px; /* Add some space above the image */
+    }
+
+    .About .image img {
+        max-height: 300px; /* Adjust the maximum height of the image on small screens */
+    }
+
+    .About h3 {
+        font-size: 1.8em;
+    }
+
+    .About p {
+        font-size: 1em;
+    }
+}

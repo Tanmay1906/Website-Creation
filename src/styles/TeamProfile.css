@@ -1,0 +1,116 @@
+/* src/styles/OurTeam.css */
+
+.team-section {
+    text-align: center;
+}
+
+.team-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto 20px auto;
+    font: 1em sans-serif;
+    font-size: xx-large;
+}
+
+.team-title h2 {
+    margin: 0;
+}
+
+.team-subtitle {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    text-align: left;
+    margin-left: 220px;
+    color: rgb(157, 160, 162);
+}
+
+.team-carousel {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    margin-left: 220px;
+}
+
+.team-carousel img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    position: relative;
+    z-index: 1;
+    margin-left: -20px; /* Overlap the previous image */
+}
+
+.team-carousel img:first-child {
+    margin-left: 0; /* No overlap for the first image */
+}
+
+.view-all {
+    padding: 10px 20px;
+    background-color: #6a4c93;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-left: auto; /* Push the button to the right side */
+    vertical-align: middle; /* Align with the middle of the carousel */
+    border-radius: 5px;
+    margin-right: 150px;
+}
+
+.view-all:hover {
+    background-color: #5a3c83;
+}
+
+.more-members {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #6a4c93;
+    color: white;
+    font-size: 1.2em;
+    border: 2px solid #fff;
+    margin-left: -20px; 
+    z-index: 1;
+}
+
+.team-profile {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+}
+
+.team-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.team-member {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 200px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.team-member-image {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.team-member h3 {
+    font-size: 1.2em;
+    margin: 0;
+}

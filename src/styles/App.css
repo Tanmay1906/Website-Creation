@@ -1,0 +1,60 @@
+/* src/styles/App.css */
+header {
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+
+main {
+  padding: 20px;
+  text-align: center;
+}
+/* src/styles/App.css */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.achievement {
+  cursor: pointer;
+  text-align: center;
+}
+
+.achievement img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.achievement h3 {
+  margin-top: 10px;
+  font-size: 1.2em;
+}
+
+
+footer {
+  background-color: #000308;
+  color: white;
+  text-align: center;
+  height: 20px; /* Set the height of the footer */
+  position: fixed;
+  width: 100%;
+}
+/* src/styles/App.css */
+body {
+    background-color: #000308; /* Same background color */
+    color: white;
+    font-family: 'Roboto', sans-serif; /* Ensure this matches your landing page font */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding-bottom: 20px; /* Add bottom padding to prevent footer overlap */
+}
+

@@ -1,0 +1,39 @@
+/* src/styles/ViewGallery.css */
+
+.view-gallery {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.view-gallery h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.view-gallery p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.view-gallery .carousel .slide img {
+    width: 50%;
+    height: 450px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
+}
+
+.view-gallery .view-all {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #6a4c93;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-left: 150px;
+}
+
+.view-gallery .view-all:hover {
+    background-color: #5a3c83;
+}

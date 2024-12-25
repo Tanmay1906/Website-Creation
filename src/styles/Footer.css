@@ -1,0 +1,68 @@
+/* src/styles/Footer.css */
+
+.footer {
+    background-color: #282c34; /* Dark background color */
+    color: #ddd; /* Light text color */
+    padding: 20px; /* Add padding */
+    text-align: center; /* Center the text */
+    position: relative; /* Ensure it is positioned correctly */
+    width: 100%; /* Full width */
+    bottom: 0; /* Stick to the bottom */
+    font-size: 0.9em; /* Smaller font size */
+}
+
+.footer .footer-content {
+    max-width: 1200px; /* Limit the width of the content */
+    margin: 0 auto; /* Center the content */
+    display: flex;
+    justify-content: space-between; /* Distribute space between items */
+    align-items: center; /* Center items vertically */
+    flex-wrap: wrap; /* Wrap items to the next line if needed */
+    overflow-x: auto; /* Handle overflow on small screens */
+    white-space: nowrap; /* Prevent wrapping */
+}
+
+.footer .footer-content .footer-section {
+    flex: 1; /* Allow sections to grow and shrink */
+    padding: 10px 20px; /* Add padding for each section */
+    min-width: 200px; /* Minimum width to avoid squeezing on smaller screens */
+    color: #aaa; /* Lighter text color */
+}
+
+.footer .footer-content .footer-section h3 {
+    margin-bottom: 10px; /* Space below the heading */
+    font-size: 1.5em; /* Font size for the heading */
+}
+
+.footer .footer-content .footer-section p,
+.footer .footer-content .footer-section a {
+    color: white; /* Text color */
+    text-decoration: none; /* Remove underline from links */
+    margin-bottom: 10px; /* Space below each paragraph/link */
+    display: block; /* Make links block elements */
+}
+
+.footer .footer-content .footer-section a:hover {
+    text-decoration: underline; /* Underline links on hover */
+}
+
+.footer .footer-bottom {
+    margin-top: 20px; /* Space above the bottom section */
+    font-size: 0.9em; /* Smaller font size */
+    color: #aaa; /* Lighter text color */
+    width: 100%; /* Full width */
+    text-align: center; /* Center the text */
+    padding-top: 10px; /* Padding for top */
+}
+
+@media (max-width: 768px) {
+    .footer .footer-content {
+        flex-direction: column; /* Stack items vertically */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    .footer .footer-content .footer-section {
+        text-align: left; /* Align text to the left */
+        padding: 10px 20px; /* Add padding for each section */
+    }
+}

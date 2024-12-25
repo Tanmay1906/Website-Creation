@@ -1,0 +1,85 @@
+/* src/styles/JobListing.css */
+
+.job-listing-page {
+    text-align: center;
+    padding: 100px 50px 50px; /* Adjust the padding to account for the navbar height */
+    background: linear-gradient(to bottom, #000000, #2f2f2f); /* Gradient background */
+    min-height: calc(100vh - 100px); /* Adjust 100px based on your header and footer height */
+    box-sizing: border-box;
+    min-width: 100vw;
+    transition: opacity 0.5s ease-out; /* Ensure the transition is applied */
+}
+
+.job-listing-page h1 {
+    margin-top: 120px; /* Ensure the heading is properly aligned */
+}
+
+.job-listing-page.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+.footer {
+    background-color: #282c34; /* Dark background color */
+    color: #ddd; /* Light text color */
+    text-align: center; /* Center the text */
+    padding: 20px; /* Add padding */
+    position: relative; /* Ensure it is positioned correctly */
+    width: 100%; /* Full width */
+    bottom: 0; /* Stick to the bottom */
+}
+
+.listings-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap; /* Ensure wrapping on smaller screens */
+    margin-top: 30px;
+    gap: 20px;
+}
+
+.job-listings, .internship-listings {
+    flex: 1;
+    max-width: 48%; /* Ensure sections take equal space and have a small gap */
+    box-sizing: border-box;
+}
+
+.job-listings h2, .internship-listings h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.job-item {
+    background-color: rgb(33, 32, 32);
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px; /* Add bottom margin for spacing */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.job-item h3 {
+    margin-bottom: 10px;
+    color: #00ffff; /* Light blue color for titles */
+}
+
+.job-item p {
+    color: #ddd;
+    margin-bottom: 10px;
+}
+
+.job-item p strong {
+    color: #00ffff; /* Light blue color for strong text */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .listings-container {
+        flex-direction: column; /* Stack sections vertically on small screens */
+    }
+
+    .job-listings, .internship-listings {
+        max-width: 100%; /* Full width on small screens */
+    }
+}
+

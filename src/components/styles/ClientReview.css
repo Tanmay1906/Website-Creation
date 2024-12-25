@@ -1,0 +1,189 @@
+/* src/styles/ClientReview.css */
+
+.client-review-page {
+    text-align: center;
+    padding: 50px;
+    background: linear-gradient(to bottom, #1e1e1e, #333333); /* Smoother gradient */
+    min-height: 100vh;
+    margin: 0; /* Remove black edges */
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Title Styling */
+.client-review-page h1 {
+    margin-top: 150px; /* Push title down */
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #00ffff;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Flexbox container for parallel sections */
+.sections-container {
+    display: flex;
+    justify-content: space-evenly; /* Space sections evenly */
+    align-items: flex-start;
+    gap: 30px;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    margin-top: 40px;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Feedback Section and Application Section */
+.feedback-section, .application-section {
+    flex: 1; /* Equal width for both sections */
+    min-width: 300px;
+    max-width: 45%;
+    padding: 30px;
+    background-color: #222;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect */
+.feedback-section:hover, .application-section:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* Section Headings */
+.feedback-section h2, .application-section h2 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    color: #00ffff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Input and Button Styling */
+input, textarea, select, button {
+    width: 80%;
+    max-width: 500px;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #333;
+    color: white;
+    font-size: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+/* Focus Effects */
+input:focus, textarea:focus, select:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+    transform: scale(1.02);
+}
+
+/* Textarea Styling */
+textarea {
+    height: 100px;
+    resize: none;
+}
+
+/* Button Styling */
+button {
+    background-color: #00ffff;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #007f7f;
+    transform: translateY(-2px);
+}
+
+/* File Input Styling */
+input[type="file"] {
+    background-color: #444;
+    padding: 10px;
+    color: #ccc;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+/* Align sections and gradient */
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #1e1e1e, #333333); /* Full-width gradient */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.domain-section {
+    flex: 1;
+    min-width: 300px;
+    max-width: 45%;
+    padding: 30px;
+    background-color: #222;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.domain-section:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.domain-section h2 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    color: #00ffff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.domain-section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.domain-section select {
+    width: 80%;
+    max-width: 500px;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #333;
+    color: white;
+    font-size: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.domain-section select:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+    transform: scale(1.02);
+}
+/* styles/ClientReview.css */
+.status-message {
+    margin-bottom: 20px;
+    padding: 10px;
+    color: #fff;
+    background-color: #4caf50;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+}
